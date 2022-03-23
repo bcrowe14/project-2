@@ -16,9 +16,9 @@
 //====  Pokemon API ====
 const button = document.querySelector('button')
 const breedInput = document.querySelector('input')
-const imageDiv = document.querySelector('div')
-const divv = document.querySelector('divv')
-const divvv = document.querySelector('divvv')
+const imageDiv = document.querySelector('imgDiv')
+const nameDiv = document.querySelector('nameDiv')
+const infoDiv = document.querySelector('infoDiv')
 
 
 button.addEventListener('click',async () => {
@@ -30,7 +30,7 @@ button.addEventListener('click',async () => {
   imageDiv.innerHTML = `<img src=${gengarPic} />`
 
   let gengarName = response.data.forms[0].name
-  divv.innerHTML = `${gengarName}`
+  nameDiv.innerHTML = `${gengarName}`
 
 //=== Joke api inside Pokemon api===//
 //   let response2 = await axios.get("https://v2.jokeapi.dev/joke/Programming")
