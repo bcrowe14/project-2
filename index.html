@@ -1,52 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
+  <head>
     <style>
-        body{
-            background-color: black
-        }
+      body {
+        background-color: black;
+      }
 
-        img{
-            margin: 10px auto 20px;
-            text-align:center;
-            display: block;
-    border-radius: 50%;
-            
-        }
+      img {
+        margin: 10px auto 20px;
+        text-align: center;
+        display: block;
+        border-radius: 50%;
+      }
 
-        .toAPIbtn{
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            background-color: #fa0505;
-            
-        }
+      .toAPIbtn {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: #fa0505;
+      }
+    </style>
 
-        </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <!--i for dog pic api -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!--i for dog pic api -->
     <!-- <script src="https://cat-fact.herokuapp.com"></script> -->
-    <script defer src="script.js"></script>  <!--if you do not defer, your script will not occur -->
-   
+    <script defer src="script.js"></script>
+    <!--if you do not defer, your script will not occur -->
+
     <title>HomePage</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
- <!-- Adding link to the button on the onclick event -->
- <img src="https://c.tenor.com/_r9T6KLBNt8AAAAC/pokemon-gotta-catch-em-all.gif">
- 
-      </header>
+      <!-- Adding link to the button on the onclick event -->
+      <img
+        src="https://c.tenor.com/_r9T6KLBNt8AAAAC/pokemon-gotta-catch-em-all.gif"
+      />
+    </header>
 
-      <div>
-          <button style="display:block; margin: 0 auto; width:50%; height:50%; border: 10px dotted; font-size: larger; padding: 20px;" class="toAPIbtn" onclick="window.location.href = 'API-Page.html';">
-     Lets go catch em all
- </button>
-</div>
-
-</body>
-
+    <div>
+      <button
+        style="
+          display: block;
+          margin: 0 auto;
+          width: 50%;
+          height: 50%;
+          border: 10px dotted;
+          font-size: larger;
+          padding: 20px;
+        "
+        class="toAPIbtn"
+        onclick="window.location.href = 'API-Page.html';"
+      >
+        Lets go catch em all
+      </button>
+    </div>
+  </body>
 </html>

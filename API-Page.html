@@ -1,43 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <style> 
-            body{
-            /* background-color: rgb(70, 60, 60)   */
-          }
-        </style>
+  <head>
+    <style>
+      body {
+         /* background-color: rgb(116, 110, 110) */
+      }
+      pokemonImg{
+        position: sticky;
+        top: 60%;
+        left: 45%;
+      }
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </style>
 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <!--i for dog pic api -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!--i for dog pic api -->
     <!-- <script src="https://cat-fact.herokuapp.com"></script> -->
-    <script defer src="script.js"></script>  <!--if you do not defer, your script will not occur -->
-   
+    <script defer src="script.js"></script>
+    <!--if you do not defer, your script will not occur -->
+
     <title>APIs</title>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <header>
-        <button id ="gengarBtn" style="display:block; margin: 0 auto; width:50%; height:50%; border: 10px dotted; 
-      font-size: larger; padding: 20px;"class = "pokePress">Throw Poké Ball at Gengar</button>
-<br>
-<button id="randomBtn" style="display:block; margin: 0 auto; width:50%; height:50%; border: 10px dotted; 
-font-size: larger; padding: 20px;"class = "pokePress">Throw Poké Ball</button>
-        <!-- <input type="text" /> -->
-      </header>
-      
-        <br>
-      <imgDiv></imgDiv>
-        <br>
-      <nameDiv></nameDiv>
-        <br>
-      <infoDiv></infoDiv>
+      <button
+        id="gengarBtn"
+        style="
+          display: block;
+          margin: 0 auto;
+          width: 50%;
+          height: 50%;
+          border: 10px dotted;
+          font-size: larger;
+          padding: 20px;
+          background-color: rgb(170, 101, 170);
+        "
+        class="pokePress"
+      >
+        Throw Poké Ball at Gengar
+      </button>
+      <br />
+      <button
+        id="randomBtn"
+        style="
+          display: block;
+          margin: 0 auto;
+          width: 50%;
+          height: 50%;
+          border: 10px dotted;
+          font-size: larger;
+          padding: 20px;
+          background-color: rgb(224, 68, 68);
+        "
+        class="pokePress"
+      >
+        Throw Poké Ball
+      </button>
+      <!-- <input type="text" /> -->
+    </header>
 
+<pokemonImg>
+    <br />
+    <imgDiv></imgDiv>
+    <br />
+    <nameDiv></nameDiv>
+    <br />
+    <infoDiv></infoDiv>
+</pokemonImg>
 
-      
-</body>
-
+  </body>
 </html>
