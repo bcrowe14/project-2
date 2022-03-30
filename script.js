@@ -27,7 +27,7 @@ gengarBtn.addEventListener("click", async () => {
 //Random Pokemon
 randomBtn.addEventListener("click", async () => {
   let response = await axios.get(`https://pokeapi.co/api/v2/pokemon`); //response is convention for axios
-  
+
   let random = Math.floor(Math.random() * 19);
   console.log(response.data);
 
@@ -36,23 +36,21 @@ randomBtn.addEventListener("click", async () => {
 
   let randomResponseUrl = response.data.results[random].url;
   let randomResponse = await axios.get(`${randomResponseUrl}`);
-//image
+  //image
   let randomPic = randomResponse.data.sprites.front_default;
   imageDiv.innerHTML = `<img class="img-class" src=${randomPic} />`;
-//name
+  //name
   let randomName = response.data.results[random].name;
   nameDiv.innerHTML = `Name: ${randomName}`;
-//type
+  //type
   let randomInfo = randomResponse.data.types[0].type.name;
   infoDiv.innerHTML = `Type: ${randomInfo}`;
-//ability
+  //ability
   let randomAbility = randomResponse.data.abilities[0].ability.name;
   infoDivOne.innerHTML = `Ability: ${randomAbility}`;
 
   console.log(randomName);
-  console.log("response: "+ randomResponse.data.abilities[0].ability.name);
+  console.log("response: " + randomResponse.data.abilities[0].ability.name);
 
   //Home Button
-
-
 });
