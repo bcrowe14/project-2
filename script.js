@@ -37,6 +37,7 @@ gengarBtn.addEventListener("click", async () => {
 //Random Pokemon
 randomBtn.addEventListener("click", async () => {
   let response = await axios.get(`https://pokeapi.co/api/v2/pokemon`); //response is convention for axios
+  
   let random = Math.floor(Math.random() * 19);
   console.log(response.data);
 
@@ -58,9 +59,4 @@ randomBtn.addEventListener("click", async () => {
   console.log(randomName);
   console.log(response.data.results[random].url);
 
-  //=== Joke api inside Pokemon api===//
-  //   let response2 = await axios.get("https://v2.jokeapi.dev/joke/Programming")
-
-  //   let jokeText = response2.data.joke
-  //    divvv.innerHTML = `${jokeText} `
 });
