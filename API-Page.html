@@ -42,13 +42,23 @@
           padding: 20px;
       }
 
-      button:hover{
-  color: #000000;
-  /* border: #59ff67 solid 1px; */
-  background:rgb(255, 255, 255);
-}
+      .homeBtn{
+        background-color:rgb(255, 255, 255);
+      }
 
+      .homeBtn:hover{
+        color: #000000;
+        /* border: #59ff67 solid 1px; */
+        background:rgb(240, 206, 206);
+      }
 
+      .pokePress:hover{
+        color: #000000;
+        /* border: #59ff67 solid 1px; */
+        background:rgb(255, 0, 0);
+      }
+
+      
 
     </style>
 
@@ -78,7 +88,7 @@
         left:0;
         padding: 10px;
       "
-      class="homeBtn hover"
+      class="homeBtn"
       onclick="window.location.href = 'index.html';"
       >
       ← Back
@@ -89,10 +99,9 @@
       <button
         id="gengarBtn"
         style="
-          background-color: rgb(170, 101, 170);
           margin-right: 50px;
         "
-        class="pokePress"
+        class="pokePress hover"
       >
         Throw Poké Ball for Gengar
       </button>
@@ -101,7 +110,6 @@
       class="pokePress hover"
         id="randomBtn"
         style="
-          background-color: rgb(224, 68, 68);
           margin-left: 50px;
         "
         
