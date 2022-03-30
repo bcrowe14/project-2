@@ -32,16 +32,17 @@
       }
 
       .pokePress{
-        display: block;
+        display: inline-block;
           margin: 0 auto;
-          width: 50%;
+          width: 30%;
           height: 50%;
           border: 10px dotted;
           font-family: 'Pokemon Solid', sans-serif;
           letter-spacing: 2px;
-          font-size: larger;
+          font-size: 15px;
           padding: 20px;
       }
+
 
     </style>
 
@@ -61,20 +62,23 @@
   <body>
     <header>
       Where do you want to throw the Poké Ball?
+    </br>
       <button
         id="gengarBtn"
         style="
           background-color: rgb(170, 101, 170);
+          margin-right: 50px;
         "
         class="pokePress"
       >
         Throw Poké Ball at Gengar
       </button>
-      <br />
+      
       <button
         id="randomBtn"
         style="
           background-color: rgb(224, 68, 68);
+          margin-left: 50px;
         "
         class="pokePress"
       >
