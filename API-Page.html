@@ -2,14 +2,35 @@
 <html lang="en">
   <head>
     <style>
+      @import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+      
       body {
          /* background-color: rgb(116, 110, 110) */
-      }
+         font-size: 30px;
+         font-family: 'Pokemon Solid', sans-serif;
+         text-align: center;
+         letter-spacing: 2px;
+         background-image: url("https://i.pinimg.com/originals/df/4e/8b/df4e8ba28f912bf9cdf9fa0dfc196411.png");
+         /* background-repeat: no-repeat; */
+         background-size: 100%;
+        }
+
       pokemonImg{
         position: sticky;
         top: 60%;
         left: 45%;
+        font-size: 40px;
       }
+
+      img{
+        width: 200px;
+        height: auto;
+      }
+
+      nameDiv{
+        text-transform: capitalize;
+      }
+
 
     </style>
 
@@ -28,6 +49,7 @@
 
   <body>
     <header>
+      Where do you want to throw the Poké Ball?
       <button
         id="gengarBtn"
         style="
@@ -36,9 +58,12 @@
           width: 50%;
           height: 50%;
           border: 10px dotted;
+          font-family: 'Pokemon Solid', sans-serif;
+          letter-spacing: 2px;
           font-size: larger;
           padding: 20px;
           background-color: rgb(170, 101, 170);
+
         "
         class="pokePress"
       >
@@ -53,6 +78,8 @@
           width: 50%;
           height: 50%;
           border: 10px dotted;
+          font-family: 'Pokemon Solid', sans-serif;
+          letter-spacing: 2px;
           font-size: larger;
           padding: 20px;
           background-color: rgb(224, 68, 68);

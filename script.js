@@ -25,7 +25,7 @@ gengarBtn.addEventListener("click", async () => {
   console.log(response.data.types[0].type.name);
 
   let gengarPic = response.data.sprites.front_default;
-  imageDiv.innerHTML = `<img src=${gengarPic} />`;
+  imageDiv.innerHTML = `<img class="img-class" src=${gengarPic} />`;
 
   let gengarName = response.data.forms[0].name;
   nameDiv.innerHTML = `Name: ${gengarName}`;
@@ -47,7 +47,7 @@ randomBtn.addEventListener("click", async () => {
   let randomResponse = await axios.get(`${randomResponseUrl}`);
 
   let randomPic = randomResponse.data.sprites.front_default;
-  imageDiv.innerHTML = `<img src=${randomPic} />`;
+  imageDiv.innerHTML = `<img class="img-class" src=${randomPic} />`;
 
   let randomName = response.data.results[random].name;
   nameDiv.innerHTML = `Name: ${randomName}`;
