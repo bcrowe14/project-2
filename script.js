@@ -4,11 +4,12 @@
 const imageDiv = document.querySelector("imgDiv");
 const nameDiv = document.querySelector("nameDiv");
 const infoDiv = document.querySelector("infoDiv");
+const infoDivOne = document.querySelector("infoDivOne");
 
 //Gengar//
 gengarBtn.addEventListener("click", async () => {
   let response = await axios.get(`https://pokeapi.co/api/v2/pokemon/gengar`); //response is convention for axios
-  console.log(response.data.types[0].type.name);
+  console.log(response.data.abilities[0].ability.name);
 
   let gengarPic = response.data.sprites.front_default;
   imageDiv.innerHTML = `<img class="img-class" src=${gengarPic} />`;
@@ -18,6 +19,9 @@ gengarBtn.addEventListener("click", async () => {
 
   let gengarInfo = response.data.types[0].type.name;
   infoDiv.innerHTML = `Type: ${gengarInfo}`;
+
+  let gengarAbility = response.data.abilities[0].ability.name;
+  infoDivOne.innerHTML = `Ability: ${gengarAbility}`;
 });
 
 //Random Pokemon
@@ -32,20 +36,23 @@ randomBtn.addEventListener("click", async () => {
 
   let randomResponseUrl = response.data.results[random].url;
   let randomResponse = await axios.get(`${randomResponseUrl}`);
-
+//image
   let randomPic = randomResponse.data.sprites.front_default;
   imageDiv.innerHTML = `<img class="img-class" src=${randomPic} />`;
-
+//name
   let randomName = response.data.results[random].name;
   nameDiv.innerHTML = `Name: ${randomName}`;
-
+//type
   let randomInfo = randomResponse.data.types[0].type.name;
   infoDiv.innerHTML = `Type: ${randomInfo}`;
+//ability
+  let randomAbility = randomResponse.data.abilities[0].ability.name;
+  infoDivOne.innerHTML = `Ability: ${randomAbility}`;
 
   console.log(randomName);
-  console.log(response.data.results[random].url);
+  console.log("response: "+ randomResponse.data.abilities[0].ability.name);
 
   //Home Button
 
-  
+
 });
