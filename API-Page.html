@@ -42,6 +42,13 @@
           padding: 20px;
       }
 
+      button:hover{
+  color: #000000;
+  /* border: #59ff67 solid 1px; */
+  background:rgb(255, 255, 255);
+}
+
+
 
     </style>
 
@@ -60,6 +67,23 @@
 
   <body>
     <header>
+
+      <button
+      style="
+        font-size: 12px;
+        margin-top: 1px;
+        margin-left: 2px;
+        position:absolute;
+        top:0;
+        left:0;
+        padding: 10px;
+      "
+      class="homeBtn hover"
+      onclick="window.location.href = 'index.html';"
+      >
+      ← Back
+    </button>
+
       Where do you want to throw the Poké Ball?
     </br>
       <button
@@ -70,20 +94,20 @@
         "
         class="pokePress"
       >
-        Throw Poké Ball at Gengar
+        Throw Poké Ball for Gengar
       </button>
       
       <button
+      class="pokePress hover"
         id="randomBtn"
         style="
           background-color: rgb(224, 68, 68);
           margin-left: 50px;
         "
-        class="pokePress"
+        
       >
-        Throw Poké Ball
+        Throw Poké Ball to See Your Pokémon
       </button>
-      <!-- <input type="text" /> -->
     </header>
 
 <pokemonImg>
